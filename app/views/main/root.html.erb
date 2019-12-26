@@ -1,0 +1,11 @@
+<html>
+  <body>
+    <h1>服务器头列表</h1>
+    <p><%= abc_url %></p>
+    <ul>
+      <% request.headers.each do |k, v| %>
+        <li><%= k %>: <%= v %></li>
+      <% end %>
+    </ul>
+  </body>
+</html>
