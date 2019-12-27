@@ -1,11 +1,12 @@
-<html>
-  <body>
-    <h1>服务器头列表</h1>
-    <p><%= abc_url %></p>
-    <ul>
-      <% request.headers.each do |k, v| %>
-        <li><%= k %>: <%= v %></li>
-      <% end %>
-    </ul>
-  </body>
-</html>
+<h1>服务器头列表</h1>
+<p><%= abc_url %></p>
+<p><%= link_to "get", abc_url, method: :get %></p>
+<p><%= link_to "put", abc_url, method: :put %></p>
+<p><%= link_to "patch", abc_url, method: :patch %></p>
+<p><%= link_to "delete", abc_url, method: :delete %></p>
+
+<ul>
+  <% request.headers.each do |k, v| %>
+    <li><%= k %>: <%= v %></li>
+  <% end %>
+</ul>
