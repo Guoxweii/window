@@ -1,0 +1,4 @@
+production:
+  url: "redis://:hQguBucUHCDo@192.168.0.29"
+development:
+  url: "redis://localhost"

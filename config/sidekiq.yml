@@ -1,0 +1,6 @@
+---
+:concurrency: 10
+:queues: [ f_sequence, f_critical, f_priority, f_default, f_background, f_migration ]
+
+:limits:
+  f_sequence: 1
